@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!--a expressão @{} coloca o contexto da aplicação nos links do projeto.-->
+
+<!--O “xmlns” especifica o namespace XML para nosso documento. Isso significa
+que devemos sempre abrir e fechar as tags HTML-->
+
+<!--o atributo “xmlns:th” define que podemos usar as propriedades definidas pelo
+Thymeleaf-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <title>List Of Guests</title>
+
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+
+</head>
+<body>
+    <h1> Augusto's Guests System Controll</h1>
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
